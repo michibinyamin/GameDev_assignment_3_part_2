@@ -18,7 +18,7 @@ public class Ground : MonoBehaviour
 
     private void Update()
     {
-        timer = Time.deltaTime/10;  // Increase timer over time
+        timer = Time.deltaTime / 10;  //Increase timer over time
         gameSpeed += timer;
         //gameSpeedIncrease += time.deltaTime;
         float speed = gameSpeed / transform.localScale.x;

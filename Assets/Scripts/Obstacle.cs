@@ -12,14 +12,9 @@ public class Obstacle : MonoBehaviour
     private void Update()
     {
         transform.position += Ground.gameSpeed * Time.deltaTime * Vector3.left;
-        if(gameObject.name == "Dino")
-        {
-
-        }
         if (transform.position.x < leftEdge)
         {
             Destroy(gameObject);
         }
     }
-
 }
