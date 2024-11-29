@@ -13,13 +13,13 @@ public class Ground : MonoBehaviour
     {
         meshRenderer = GetComponent<MeshRenderer>();
         gameSpeed = 5f;
-        //float timer = Time.time;
+        float timer = Time.time;
     }
 
     private void Update()
     {
-        timer = Time.deltaTime/2;  // Increase timer over time
-        //gameSpeed += timer;
+        timer = Time.deltaTime/10;  // Increase timer over time
+        gameSpeed += timer;
         //gameSpeedIncrease += time.deltaTime;
         float speed = gameSpeed / transform.localScale.x;
         meshRenderer.material.mainTextureOffset += speed * Time.deltaTime * Vector2.right;

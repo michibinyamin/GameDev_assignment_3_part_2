@@ -15,7 +15,7 @@ public class DinoJump : MonoBehaviour
     {
         if (rb != null)
         {
-            float jumpForce = Random.Range(4f, 12f);
+            float jumpForce = Random.Range(4f, 10f);
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // Apply jump force
         }
     }
